@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYDRA | Pure Hydration, Redefined</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <span class="loader-logo">HYDRA</span>
+            <div class="loader-progress">
+                <div id="loader-bar" class="loader-bar"></div>
+            </div>
+            <p id="loader-text">0% INITIALIZING EXPERIENCE</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HYDRA</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Benefits</a>
+                <a href="#showcase" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link btn-minimal">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Scroll Sequence Section -->
+    <section id="hero" class="hero">
+        <div class="canvas-wrapper">
+            <canvas id="scroll-canvas"></canvas>
+        </div>
+        
+        <div class="hero-content">
+            <div class="reveal-container" data-scroll data-scroll-speed="2">
+                <span class="tagline">Nature's Purest Formula</span>
+                <h1>PURE<br><span class="accent">HYDRATION</span></h1>
+                <p>Designed for the ambitious, crafted for the curious. Experience the next evolution of botanical hydration.</p>
+                <div class="cta-group">
+                    <a href="#showcase" class="btn btn-primary magnetic">Explore Now</a>
+                    <a href="#about" class="btn btn-secondary magnetic">The Story</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>SCROLL TO DIVE</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" data-scroll-section>
+        <div class="container">
+            <div class="grid">
+                <div class="about-text" data-scroll data-scroll-fade>
+                    <span class="label">Our Origin</span>
+                    <h2>CRAFTED FROM<br>THE SOURCE</h2>
+                    <p>We spent three years scouring the most remote regions to find water that wasn't just pure, but alive. Combined with organic fruit essences, Hydra is more than a drink—it's a biological upgrade.</p>
+                    <div class="stats-mini">
+                        <div class="stat-item">
+                            <span class="stat-num">0%</span>
+                            <span class="stat-label">Sugars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Natural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-scroll data-scroll-speed="1.5">
+                    <div class="glass-float">
+                        <img src="https://images.unsplash.com/photo-1544145945-f904253db0ad?w=800&auto=format&fit=crop" alt="Pure Water">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="label">Capabilities</span>
+                <h2>WHY CHOOSE HYDRA</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass" data-scroll data-scroll-fade>
+                    <div class="icon">⚡</div>
+                    <h3>Peak Energy</h3>
+                    <p>Natural electrolytes that replenish your body without the crash of artificial stimulants.</p>
+                    <div class="glow"></div>
+                </div>
+                <div class="feature-card glass" data-scroll data-scroll-fade>
+                    <div class="icon">🌿</div>
+                    <h3>Organic Essence</h3>
+                    <p>Directly extracted from cold-pressed fruits to maintain nutritional integrity.</p>
+                    <div class="glow"></div>
+                </div>
+                <div class="feature-card glass" data-scroll data-scroll-fade>
+                    <div class="icon">💎</div>
+                    <h3>Mineral Rich</h3>
+                    <p>Trace minerals sourced from deep volcanic springs for optimal absorption.</p>
+                    <div class="glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase-section">
+        <div class="full-image-reveal" data-scroll data-scroll-zoom>
+            <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1600&auto=format&fit=crop" alt="Hydration Experience">
+            <div class="overlay-text">
+                <h2>THE FEELING OF PURE</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <span class="counter" data-target="500">0</span><span class="suffix">K+</span>
+                    <p>Daily Users</p>
+                </div>
+                <div class="impact-item">
+                    <span class="counter" data-target="24">0</span><span class="suffix">/7</span>
+                    <p>Vitality</p>
+                </div>
+                <div class="impact-item">
+                    <span class="counter" data-target="100">0</span><span class="suffix">%</span>
+                    <p>Recyclable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-box glass" data-scroll data-scroll-speed="1">
+                <h2>READY TO UPGRADE?</h2>
+                <p>Join the inner circle and be the first to experience our next limited drop.</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">HYDRA</a>
+                    <p>Redefining hydration for the modern age.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="nav-col">
+                        <h4>Explore</h4>
+                        <a href="#">About</a>
+                        <a href="#">Products</a>
+                        <a href="#">Sourcing</a>
+                    </div>
+                    <div class="nav-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HYDRA BOTANICALS. ALL RIGHTS RESERVED.</p>
+                <div class="socials">
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                    <a href="#">LI</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
