@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Premium Loader -->
     <div id="loader" class="loader">
@@ -25,6 +27,14 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">HYDRA</a>
+
+            <!-- Hamburger Menu for Mobile -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#features" class="nav-link">Benefits</a>
@@ -39,19 +49,20 @@
         <div class="canvas-wrapper">
             <canvas id="scroll-canvas"></canvas>
         </div>
-        
+
         <div class="hero-content">
             <div class="reveal-container" data-scroll data-scroll-speed="2">
                 <span class="tagline">Nature's Purest Formula</span>
                 <h1>PURE<br><span class="accent">HYDRATION</span></h1>
-                <p>Designed for the ambitious, crafted for the curious. Experience the next evolution of botanical hydration.</p>
+                <p>Designed for the ambitious, crafted for the curious. Experience the next evolution of botanical
+                    hydration.</p>
                 <div class="cta-group">
                     <a href="#showcase" class="btn btn-primary magnetic">Explore Now</a>
                     <a href="#about" class="btn btn-secondary magnetic">The Story</a>
                 </div>
             </div>
         </div>
-        
+
         <div class="scroll-indicator">
             <div class="mouse">
                 <div class="wheel"></div>
@@ -67,7 +78,9 @@
                 <div class="about-text" data-scroll data-scroll-fade>
                     <span class="label">Our Origin</span>
                     <h2>CRAFTED FROM<br>THE SOURCE</h2>
-                    <p>We spent three years scouring the most remote regions to find water that wasn't just pure, but alive. Combined with organic fruit essences, Hydra is more than a drink—it's a biological upgrade.</p>
+                    <p>We spent three years scouring the most remote regions to find water that wasn't just pure, but
+                        alive. Combined with organic fruit essences, Hydra is more than a drink—it's a biological
+                        upgrade.</p>
                     <div class="stats-mini">
                         <div class="stat-item">
                             <span class="stat-num">0%</span>
@@ -81,7 +94,7 @@
                 </div>
                 <div class="about-visual" data-scroll data-scroll-speed="1.5">
                     <div class="glass-float">
-                        <img src="https://images.unsplash.com/photo-1544145945-f904253db0ad?w=800&auto=format&fit=crop" alt="Pure Water">
+                        <img src="image copy.png" alt="Dynamic Water Splash">
                     </div>
                 </div>
             </div>
@@ -95,7 +108,7 @@
                 <span class="label">Capabilities</span>
                 <h2>WHY CHOOSE HYDRA</h2>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature-card glass" data-scroll data-scroll-fade>
                     <div class="icon">⚡</div>
@@ -122,7 +135,8 @@
     <!-- Showcase Section -->
     <section id="showcase" class="showcase-section">
         <div class="full-image-reveal" data-scroll data-scroll-zoom>
-            <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1600&auto=format&fit=crop" alt="Hydration Experience">
+            <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1600&auto=format&fit=crop"
+                alt="Hydration Experience">
             <div class="overlay-text">
                 <h2>THE FEELING OF PURE</h2>
             </div>
@@ -198,4 +212,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

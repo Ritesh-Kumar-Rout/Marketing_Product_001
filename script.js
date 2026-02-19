@@ -105,9 +105,41 @@ document.addEventListener('DOMContentLoaded', () => {
         initRevealObserver();
         initCounters();
         initMagneticButtons();
+        initMobileMenu();
     };
 
     // --- Interaction Subsystems ---
+
+    // 0. Mobile Menu Logic
+    const initMobileMenu = () => {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navbar = document.querySelector('.navbar');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu on link click
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // Navbar scrolled state
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    };
 
     // 1. Reveal on Scroll (Intersection Observer)
     const initRevealObserver = () => {
